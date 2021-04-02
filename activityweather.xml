@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity">
+
+    <RadioGroup
+        android:id="@+id/tempGroup"
+        android:layout_width="365dp"
+        android:layout_height="109dp"
+        android:layout_below="@+id/txtInputTemp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="23dp"
+        tools:layout_editor_absoluteX="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp">
+
+        <RadioButton
+            android:id="@+id/btnDegF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/degFah"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/btnDegC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/degCel"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/btnDegK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/degKel"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblOutput"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="339dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="129dp"
+        android:layout_marginRight="129dp"
+        android:layout_marginBottom="289dp"
+        android:text="@string/btnConvert"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+    <TextView
+        android:id="@+id/tempChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="@string/tempChoose"
+        android:textColor="#2D652F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp" />
+
+    <TextView
+        android:id="@+id/lblOutputF"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="253dp" />
+
+    <TextView
+        android:id="@+id/enterTemp"
+        android:layout_width="348dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="86dp"
+        android:text="@string/enterTemp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblOutputK"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="209dp" />
+
+    <TextView
+        android:id="@+id/lblOutputC"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="166dp" />
+
+    <EditText
+        android:id="@+id/txtInputTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-323dp"
+        android:layout_marginLeft="-323dp"
+        android:layout_marginTop="152dp"
+        android:layout_toEndOf="@+id/lblOutput"
+        android:layout_toRightOf="@+id/lblOutput"
+        android:inputType="number" />
+
+</RelativeLayout>
